@@ -1,45 +1,53 @@
 
 import { Gavel, History, Search, UserCheck, Cpu, BarChart3, Globe, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const SERVICES = [
   {
     title: "Rights Administration",
+    slug: "rights-administration",
     icon: Gavel,
     description: "Management of intellectual property portfolios, including licensing, royalty collection, and estate coordination.",
     category: "Operations"
   },
   {
     title: "Royalty Recovery",
+    slug: "royalty-recovery",
     icon: Globe,
     description: "Identification and recovery of unpaid or misallocated royalties across global collection systems.",
     category: "Financial"
   },
   {
     title: "Copyright Research",
+    slug: "copyright-research",
     icon: Search,
     description: "Deep legal and archival investigation into ownership, chain-of-title, and rights validity.",
     category: "Forensics"
   },
   {
     title: "Estate Representation",
+    slug: "estate-representation",
     icon: UserCheck,
     description: "Support for heirs, families, and institutions managing creative legacies and complex successions.",
     category: "Advisory"
   },
   {
     title: "Archive Digitization",
+    slug: "archive-digitization",
     icon: History,
     description: "Conversion of physical and analog collections into structured, museum-grade digital systems.",
     category: "Preservation"
   },
   {
     title: "Licensing & Monetization",
+    slug: "licensing-monetization",
     icon: Cpu,
     description: "Commercial licensing strategy across media, publishing, AI training, and archival use cases.",
     category: "Growth"
   },
   {
     title: "Rights Intelligence Reports",
+    slug: "rights-intelligence-reports",
     icon: BarChart3,
     description: "Detailed analysis of ownership status, licensing potential, and commercial viability of intellectual assets.",
     category: "Intelligence"
@@ -85,9 +93,12 @@ export function Services() {
                 </p>
               </div>
 
-              <button className="flex items-center gap-2 text-background font-bold uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all opacity-40 group-hover:opacity-100">
-                Inquire <ArrowRight className="w-3 h-3" />
-              </button>
+              <Link 
+                href={`/services/${service.slug}`}
+                className="flex items-center gap-2 text-background font-bold uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all opacity-40 group-hover:opacity-100"
+              >
+                View Service Dossier <ArrowRight className="w-3 h-3" />
+              </Link>
             </div>
           ))}
           
