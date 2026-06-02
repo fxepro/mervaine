@@ -127,13 +127,38 @@ const SERVICES_DATA: Record<string, any> = {
     category: "Advisory",
     icon: UserCheck,
     description: "Support for heirs, families, and institutions managing creative legacies and complex successions.",
-    longDescription: "Strategic stewardship for multi-generational estates, providing a unified voice for creative legacies across global markets.",
+    longDescription: `
+      Estate Representation at Marwane Holdings is an exercise in sophisticated advocacy and long-term stewardship. We serve as the bridge between the personal sentiments of heirs and the commercial realities of the global marketplace. 
+      
+      Our team provides institutional-grade support for the management of creative legacies, ensuring that successions are handled with the utmost discretion and legal precision. We coordinate with family offices, legal counsel, and financial trustees to maintain the integrity of the asset while providing a stable governance framework for multi-generational growth.
+    `,
     pillars: [
-      { title: "Legacy Stewardship", description: "Long-term planning for the preservation of creative influence.", icon: Landmark },
-      { title: "Heir Coordination", description: "Facilitating governance between multiple beneficiaries and stakeholders.", icon: UserCheck },
-      { title: "Succession Planning", description: "Structural legal frameworks for the transition of rights portfolios.", icon: ShieldCheck }
+      {
+        title: "Legacy Stewardship",
+        description: "Long-term strategic planning to ensure the cultural and commercial influence of the creator endures.",
+        icon: Landmark
+      },
+      {
+        title: "Heir Coordination",
+        description: "Facilitating transparent communication and governance between multiple beneficiaries and stakeholders.",
+        icon: UserCheck
+      },
+      {
+        title: "Succession Frameworks",
+        description: "Implementing structural legal and fiduciary solutions for the orderly transition of asset control.",
+        icon: ShieldCheck
+      }
     ],
-    capabilities: ["Beneficiary Governance", "Family Office Integration", "Institutional Trustee Support", "Philanthropic Legacy Strategy"]
+    capabilities: [
+      "Beneficiary Governance & Voting Models",
+      "Family Office Integration & Reporting",
+      "Institutional Trustee Advisory",
+      "Philanthropic Bequest Management",
+      "Dispute Mediation & Conflict Resolution",
+      "Posthumous Brand Identity Strategy",
+      "Estate Asset Inventory & Valuation",
+      "Inter-generational Transfer Planning"
+    ]
   },
   "archive-digitization": {
     title: "Archive Digitization",
