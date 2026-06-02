@@ -36,6 +36,30 @@
       "description": "Vintage recording equipment and vinyl",
       "imageUrl": "https://picsum.photos/seed/music/800/600",
       "imageHint": "vintage music"
+    },
+    {
+      "id": "industry-publishing",
+      "description": "Stack of aged manuscripts and fountain pens",
+      "imageUrl": "https://picsum.photos/seed/publishing/800/600",
+      "imageHint": "old manuscripts"
+    },
+    {
+      "id": "industry-film",
+      "description": "Cinematic film reels and vintage camera gear",
+      "imageUrl": "https://picsum.photos/seed/film/800/600",
+      "imageHint": "film reels"
+    },
+    {
+      "id": "industry-art",
+      "description": "Museum gallery with classical paintings",
+      "imageUrl": "https://picsum.photos/seed/art/800/600",
+      "imageHint": "art gallery"
+    },
+    {
+      "id": "industry-ai",
+      "description": "Abstract glowing digital nodes and connections",
+      "imageUrl": "https://picsum.photos/seed/ai/800/600",
+      "imageHint": "neural network"
     }
   ]
 }
