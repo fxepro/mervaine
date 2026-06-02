@@ -3,8 +3,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { 
   ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, 
-  TrendingUp, Coins, SearchCheck, FileSearch, Landmark, BarChart3, 
-  Cpu, UserCheck, Search, Scale, Database, FileText
+  TrendingUp, Coins, SearchCheck, Landmark, BarChart3, 
+  Cpu, UserCheck, Search, Scale, Database, FileText, Scan
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -62,7 +62,7 @@ const SERVICES_DATA: Record<string, any> = {
       {
         title: "Forensic Auditing",
         description: "Deep-dive analysis into historical royalty flows to identify structural misallocations.",
-        icon: FileSearch
+        icon: SearchCheck
       },
       {
         title: "Global Reclamation",
@@ -165,13 +165,38 @@ const SERVICES_DATA: Record<string, any> = {
     category: "Preservation",
     icon: History,
     description: "Conversion of physical and analog collections into structured, museum-grade digital systems.",
-    longDescription: "State-of-the-art archival preservation using high-resolution digitization and AI-enhanced metadata tagging for historical records.",
+    longDescription: `
+      Archive Digitization at Marwane Holdings is where physical history meets digital permanence. We specialize in the conversion of fragile, analog collections—ranging from glass plate negatives and architectural blueprints to personal correspondence and rare manuscripts—into high-fidelity, museum-grade digital assets.
+      
+      Our preservation protocols go beyond simple scanning. We utilize forensic imaging techniques and AI-enhanced metadata structuring to ensure that every artifact is not only captured in stunning detail but also fully indexed for research, licensing, and institutional record-keeping. We bridge the gap between decaying physical archives and the limitless potential of digital accessibility.
+    `,
     pillars: [
-      { title: "Forensic Imaging", description: "Ultra-high-resolution capture of fragile historical artifacts.", icon: FileSearch },
-      { title: "Metadata Structuring", description: "Organizing archives into searchable, institutional-grade databases.", icon: Database },
-      { title: "Digital Curation", description: "Long-term storage and accessibility strategies for digital assets.", icon: ShieldCheck }
+      {
+        title: "Forensic Imaging",
+        description: "Ultra-high-resolution capture of fragile historical artifacts using non-invasive techniques.",
+        icon: Scan
+      },
+      {
+        title: "Metadata Structuring",
+        description: "Organizing archives into searchable, institutional-grade databases with AI-assisted tagging.",
+        icon: Database
+      },
+      {
+        title: "Legacy Continuity",
+        description: "Implementing long-term storage and accessibility strategies to ensure data durability.",
+        icon: ShieldCheck
+      }
     ],
-    capabilities: ["Glass Plate Negative Recovery", "Manuscript Digitization", "Multi-Spectral Imaging", "Archival Storage Solutions"]
+    capabilities: [
+      "Glass Plate Negative Recovery",
+      "Manuscript & Rare Book Digitization",
+      "Multi-Spectral Imaging (Invisible Text Recovery)",
+      "Large-Format Map & Blueprint Scanning",
+      "AI-Powered Optical Character Recognition (OCR)",
+      "Metadata Enrichment & Cataloging",
+      "Secure Archival Cloud Storage",
+      "Disaster Recovery & Asset Redundancy"
+    ]
   },
   "licensing-monetization": {
     title: "Licensing & Monetization",
@@ -261,9 +286,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <h2 className="text-[10px] uppercase font-bold tracking-[0.4em] text-foreground/30 mb-8 block">Operational Mandate</h2>
               <div className="prose prose-lg">
                 <p className="font-headline text-3xl leading-snug text-foreground/90 mb-8">
-                  "The preservation of rights is the preservation of legacy."
+                  "The preservation of archives is the preservation of truth."
                 </p>
-                <div className="space-y-6 text-foreground/70 leading-relaxed text-lg">
+                <div className="space-y-6 text-foreground/70 leading-relaxed text-lg whitespace-pre-line">
                   <p>{service.longDescription}</p>
                 </div>
               </div>
