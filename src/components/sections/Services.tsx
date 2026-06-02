@@ -1,5 +1,5 @@
 
-import { Gavel, History, Search, UserCheck, Cpu, BarChart3, Globe, ArrowRight, Coins } from "lucide-react";
+import { Gavel, History, Search, UserCheck, Cpu, BarChart3, ArrowRight, Coins } from "lucide-react";
 import Link from "next/link";
 
 const SERVICES = [
@@ -60,14 +60,14 @@ export function Services() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-3xl">
-            <span className="text-secondary font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Marwane Services</span>
+            <span className="text-secondary font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Mervaine Services</span>
             <h2 className="font-headline text-5xl md:text-7xl leading-[1] tracking-tighter">
               Institutional-Grade <br />
               <span className="text-secondary italic">Core Capabilities.</span>
             </h2>
           </div>
           <p className="max-w-xs text-background/50 text-sm leading-relaxed border-l border-background/20 pl-6 mb-2">
-            Marwane Holdings provides end-to-end stewardship across research, administration, and commercialization.
+            Mervaine Holdings provides end-to-end stewardship across research, administration, and commercialization.
           </p>
         </div>
 

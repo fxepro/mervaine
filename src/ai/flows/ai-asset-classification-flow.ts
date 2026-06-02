@@ -1,7 +1,7 @@
 
 'use server';
 /**
- * @fileOverview An AI agent for classifying user assets and suggesting the appropriate Marwane service path.
+ * @fileOverview An AI agent for classifying user assets and suggesting the appropriate Mervaine service path.
  *
  * - aiAssetClassification - A function that handles the asset classification process.
  * - AiAssetClassificationInput - The input type for the aiAssetClassification function.
@@ -19,8 +19,8 @@ export type AiAssetClassificationInput = z.infer<typeof AiAssetClassificationInp
 
 // Define the output schema
 const AiAssetClassificationOutputSchema = z.object({
-  division: z.string().describe('The primary Marwane service stream relevant to the asset.'),
-  servicePath: z.string().describe('A suggested service path or next step within Marwane services, tailored to the asset description.'),
+  division: z.string().describe('The primary Mervaine service stream relevant to the asset.'),
+  servicePath: z.string().describe('A suggested service path or next step within Mervaine services, tailored to the asset description.'),
   reasoning: z.string().describe('A brief explanation of why this service path was chosen.'),
 });
 export type AiAssetClassificationOutput = z.infer<typeof AiAssetClassificationOutputSchema>;
@@ -33,9 +33,9 @@ const prompt = ai.definePrompt({
   name: 'assetClassificationPrompt',
   input: { schema: AiAssetClassificationInputSchema },
   output: { schema: AiAssetClassificationOutputSchema },
-  prompt: `You are an expert asset classifier for Marwane Holdings, a company dedicated to preservation and stewardship. Your task is to analyze a user's asset description and determine the most relevant Marwane service and an appropriate service path.
+  prompt: `You are an expert asset classifier for Mervaine Holdings, a company dedicated to preservation and stewardship. Your task is to analyze a user's asset description and determine the most relevant Mervaine service and an appropriate service path.
 
-Here are the core Marwane services:
+Here are the core Mervaine services:
 1. Rights Administration: Management of intellectual property portfolios, licensing, royalty collection.
 2. Royalty Recovery: Identification and recovery of unpaid or misallocated royalties globally.
 3. Copyright Research: Deep legal and archival investigation into ownership and chain-of-title.

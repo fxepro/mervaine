@@ -22,7 +22,7 @@ export function Hero() {
               <span className="text-primary italic">Generations</span> to Come.
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl leading-relaxed animate-staccato delay-2">
-              Marwane Holdings manages the intersection of historical significance and future utility. 
+              Mervaine Holdings manages the intersection of historical significance and future utility. 
               We provide institutional-grade preservation, rights management, and data intelligence 
               for estates, collections, and intellectual assets.
             </p>
@@ -55,7 +55,7 @@ export function Hero() {
             <div className="absolute bottom-12 left-12 right-12 flex justify-between items-end text-background">
               <div className="max-w-md">
                 <span className="block text-xs uppercase tracking-widest opacity-80 mb-2">Internal Index: MH-1944-PR</span>
-                <p className="font-headline text-2xl leading-tight">Marwane Archives central repository for historical record keeping.</p>
+                <p className="font-headline text-2xl leading-tight">Mervaine Archives central repository for historical record keeping.</p>
               </div>
               <div className="hidden md:block">
                 <div className="w-16 h-16 border border-background/40 flex items-center justify-center rounded-full">

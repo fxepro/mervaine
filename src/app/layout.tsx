@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Marwane Holdings | Preservation & Stewardship',
-  description: 'Marwane Holdings is dedicated to the preservation of heritage and the stewardship of intellectual and physical assets.',
+  title: 'Mervaine Holdings | Preservation & Stewardship',
+  description: 'Mervaine Holdings is dedicated to the preservation of heritage and the stewardship of intellectual and physical assets.',
 };
 
 export default function RootLayout({

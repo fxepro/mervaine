@@ -15,7 +15,7 @@ export function Navbar() {
               M
             </div>
             <span className="font-headline text-2xl tracking-tight hidden md:block">
-              MARWANE <span className="font-light">HOLDINGS</span>
+              MERVAINE <span className="font-light">HOLDINGS</span>
             </span>
           </Link>
           

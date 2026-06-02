@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { 
   Music, BookText, Film, Image as ImageIcon, History, Cpu, 
   ArrowLeft, ShieldCheck, Globe, Scale, Database, Zap, 
-  ChevronRight, ArrowRight
+  ArrowRight
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,7 +79,7 @@ export default function IndustriesPage() {
                 <span className="italic text-primary">Serve.</span>
               </h1>
               <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed font-light animate-staccato delay-1 max-w-3xl">
-                Marwane Holdings operates across creative, cultural, and informational industries where intellectual property and archival assets form long-term value systems.
+                Mervaine Holdings operates across creative, cultural, and informational industries where intellectual property and archival assets form long-term value systems.
               </p>
             </div>
             

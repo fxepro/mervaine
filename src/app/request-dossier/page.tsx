@@ -1,7 +1,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ShieldCheck, FileText, Send, ArrowLeft, Lock, Globe } from "lucide-react";
+import { ShieldCheck, Send, ArrowLeft, Lock, Globe } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -40,7 +40,7 @@ export default function RequestDossierPage() {
                   </div>
                   <div>
                     <h4 className="font-headline text-xl uppercase mb-2">Confidential Handling</h4>
-                    <p className="text-sm text-foreground/50 leading-relaxed">All submissions are protected under Marwane's institutional non-disclosure standards.</p>
+                    <p className="text-sm text-foreground/50 leading-relaxed">All submissions are protected under Mervaine's institutional non-disclosure standards.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -103,7 +103,7 @@ export default function RequestDossierPage() {
                   <div className="flex items-start gap-3 py-4">
                     <input type="checkbox" className="w-4 h-4 mt-0.5 rounded-none border-foreground accent-primary" id="nda-agree" />
                     <label htmlFor="nda-agree" className="text-[10px] text-foreground/60 italic leading-tight">
-                      I acknowledge that this inquiry initiates a formal professional engagement subject to Marwane Holdings' standard confidentiality protocols.
+                      I acknowledge that this inquiry initiates a formal professional engagement subject to Mervaine Holdings' standard confidentiality protocols.
                     </label>
                   </div>
 

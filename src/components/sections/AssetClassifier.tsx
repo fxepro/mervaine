@@ -41,7 +41,7 @@ export function AssetClassifier() {
             </h2>
             <p className="text-foreground/70 leading-relaxed mb-8">
               Describe your asset—whether it be a family estate, a music catalog, or a historical archive. 
-              Our AI classification system will determine the optimal Marwane service path and provide immediate strategic routing.
+              Our AI classification system will determine the optimal Mervaine service path and provide immediate strategic routing.
             </p>
             <div className="p-8 border-2 border-foreground/5 bg-background shadow-inner">
               <span className="text-xs uppercase font-bold tracking-widest block mb-4">Asset Description Registry</span>
@@ -67,7 +67,7 @@ export function AssetClassifier() {
                 <Card className="border-2 border-primary overflow-hidden shadow-2xl">
                   <div className="bg-primary p-6 text-primary-foreground flex justify-between items-center">
                     <span className="text-xs uppercase font-bold tracking-widest">Classification Report</span>
-                    <span className="text-[10px] font-mono opacity-60">REF: MAR-{Math.random().toString(36).substr(2, 6).toUpperCase()}</span>
+                    <span className="text-[10px] font-mono opacity-60">REF: MER-{Math.random().toString(36).substr(2, 6).toUpperCase()}</span>
                   </div>
                   <CardContent className="p-10 space-y-8">
                     <div>
@@ -88,8 +88,8 @@ export function AssetClassifier() {
                       <p className="text-sm leading-relaxed text-foreground/70 italic">"{result.reasoning}"</p>
                     </div>
 
-                    <Button variant="link" className="p-0 text-primary uppercase font-bold text-xs tracking-widest flex items-center gap-2">
-                      Initiate Formal Onboarding <ChevronRight className="w-4 h-4" />
+                    <Button variant="link" className="p-0 text-primary uppercase font-bold text-xs tracking-widest flex items-center gap-2" asChild>
+                      <Link href="/request-dossier">Initiate Formal Onboarding <ChevronRight className="w-4 h-4" /></Link>
                     </Button>
                   </CardContent>
                 </Card>

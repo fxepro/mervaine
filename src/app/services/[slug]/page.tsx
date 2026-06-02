@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { 
   ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, 
   TrendingUp, Coins, SearchCheck, Landmark, BarChart3, 
-  Cpu, UserCheck, Search, Scale, Database, FileText, Scan, Zap
+  UserCheck, Search, Scale, Scan
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,7 @@ const SERVICES_DATA: Record<string, any> = {
     icon: Gavel,
     description: "Comprehensive management of intellectual property portfolios, ensuring rigorous legal oversight and strategic commercial utilization.",
     longDescription: `
-      Rights Administration at Marwane Holdings is the cornerstone of our stewardship model. We provide a centralized, institutional-grade framework for the oversight of intellectual property, from musical catalogs and literary estates to scientific patents and film libraries. 
+      Rights Administration at Mervaine Holdings is the cornerstone of our stewardship model. We provide a centralized, institutional-grade framework for the oversight of intellectual property, from musical catalogs and literary estates to scientific patents and film libraries. 
       
       Our methodology focuses on the unyielding verification of ownership and the optimization of licensing flows to ensure that assets are not only preserved but actively managed for maximum continuity and value.
     `,
@@ -54,7 +54,7 @@ const SERVICES_DATA: Record<string, any> = {
     icon: Coins,
     description: "Identification and recovery of unpaid or misallocated royalties across global collection systems and digital platforms.",
     longDescription: `
-      In the modern digital economy, the flow of royalties is often obscured by systemic fragmentation and metadata degradation. Marwane's Royalty Recovery division operates as a forensic financial entity, dedicated to identifying and reclaiming capital that has been lost to 'black box' funds or misallocated due to historical tracking errors.
+      In the modern digital economy, the flow of royalties is often obscured by systemic fragmentation and metadata degradation. Mervaine's Royalty Recovery division operates as a forensic financial entity, dedicated to identifying and reclaiming capital that has been lost to 'black box' funds or misallocated due to historical tracking errors.
       
       We leverage proprietary data intelligence to audit international collection societies, streaming platforms, and broadcast entities. Our mission is to bridge the gap between creative output and economic reward, ensuring that rights holders receive every cent they are legally owed.
     `,
@@ -91,7 +91,7 @@ const SERVICES_DATA: Record<string, any> = {
     icon: Search,
     description: "Deep legal and archival investigation into ownership, chain-of-title, and rights validity for high-value assets.",
     longDescription: `
-      Copyright Research at Marwane Holdings is an exercise in meticulous truth-seeking. We provide institutional heirs and investors with absolute clarity regarding the legal standing of their assets. 
+      Copyright Research at Mervaine Holdings is an exercise in meticulous truth-seeking. We provide institutional heirs and investors with absolute clarity regarding the legal standing of their assets. 
       
       Our researchers navigate global copyright registries, physical archives, and historical contracts to construct a definitive chain-of-title. This process is essential for validating ownership prior to acquisition, litigation, or large-scale commercialization.
     `,
@@ -128,9 +128,7 @@ const SERVICES_DATA: Record<string, any> = {
     icon: UserCheck,
     description: "Support for heirs, families, and institutions managing creative legacies and complex successions.",
     longDescription: `
-      Estate Representation at Marwane Holdings is an exercise in sophisticated advocacy and long-term stewardship. We serve as the bridge between the personal sentiments of heirs and the commercial realities of the global marketplace. 
-      
-      Our team provides institutional-grade support for the management of creative legacies, ensuring that successions are handled with the utmost discretion and legal precision. We coordinate with family offices, legal counsel, and financial trustees to maintain the integrity of the asset while providing a stable governance framework for multi-generational growth.
+      Estate Representation at Mervaine Holdings is an exercise in sophisticated advocacy and long-term stewardship. We serve as the bridge between the personal sentiments of heirs and the commercial realities of the global marketplace. 
     `,
     pillars: [
       {
@@ -166,9 +164,7 @@ const SERVICES_DATA: Record<string, any> = {
     icon: History,
     description: "Conversion of physical and analog collections into structured, museum-grade digital systems.",
     longDescription: `
-      Archive Digitization at Marwane Holdings is where physical history meets digital permanence. We specialize in the conversion of fragile, analog collections—ranging from glass plate negatives and architectural blueprints to personal correspondence and rare manuscripts—into high-fidelity, museum-grade digital assets.
-      
-      Our preservation protocols go beyond simple scanning. We utilize forensic imaging techniques and AI-enhanced metadata structuring to ensure that every artifact is not only captured in stunning detail but also fully indexed for research, licensing, and institutional record-keeping. We bridge the gap between decaying physical archives and the limitless potential of digital accessibility.
+      Archive Digitization at Mervaine Holdings is where physical history meets digital permanence. We bridge the gap between decaying physical archives and the limitless potential of digital accessibility.
     `,
     pillars: [
       {
@@ -179,7 +175,7 @@ const SERVICES_DATA: Record<string, any> = {
       {
         title: "Metadata Structuring",
         description: "Organizing archives into searchable, institutional-grade databases with AI-assisted tagging.",
-        icon: Database
+        icon: History
       },
       {
         title: "Legacy Continuity",
@@ -194,36 +190,21 @@ const SERVICES_DATA: Record<string, any> = {
       "Large-Format Map & Blueprint Scanning",
       "AI-Powered Optical Character Recognition (OCR)",
       "Metadata Enrichment & Cataloging",
-      "Secure Archival Cloud Storage",
-      "Disaster Recovery & Asset Redundancy"
+      "Secure Archival Cloud Storage"
     ]
   },
   "licensing-monetization": {
     title: "Licensing & Monetization",
     category: "Growth",
-    icon: Cpu,
+    icon: TrendingUp,
     description: "Commercial licensing strategy across media, publishing, AI training, and archival use cases.",
     longDescription: `
-      Licensing & Monetization at Marwane Holdings is the strategic engine that converts archival value into sustainable economic growth. We recognize that intellectual property is most powerful when it is actively engaged with the contemporary world.
-
-      Our framework for monetization is built on the principles of brand integrity and strategic alignment. We move beyond passive administration to actively cultivate partnerships in sync licensing, luxury branding, and high-growth technology sectors—including the licensing of structured data for advanced generative AI models. We ensure that every commercial engagement respects the legacy of the asset while maximizing its financial performance across international markets.
+      Licensing & Monetization at Mervaine Holdings is the strategic engine that converts archival value into sustainable economic growth.
     `,
     pillars: [
-      { 
-        title: "Commercial Strategy", 
-        description: "Identifying high-value licensing opportunities in emerging and established markets.", 
-        icon: TrendingUp 
-      },
-      { 
-        title: "AI Training Licensing", 
-        description: "Structured data licensing and compliance for modern generative AI development.", 
-        icon: Cpu 
-      },
-      { 
-        title: "Brand Partnerships", 
-        description: "Aligning historical and creative assets with contemporary institutional brands.", 
-        icon: Globe 
-      }
+      { title: "Commercial Strategy", description: "Identifying high-value licensing opportunities in emerging markets.", icon: TrendingUp },
+      { title: "AI Training Licensing", description: "Structured data licensing and compliance for generative AI.", icon: CheckCircle2 },
+      { title: "Brand Partnerships", description: "Aligning historical assets with contemporary institutional brands.", icon: Globe }
     ],
     capabilities: [
       "Synchronization Licensing for Media", 
@@ -231,9 +212,7 @@ const SERVICES_DATA: Record<string, any> = {
       "Derivative Work & Adaptation Strategy", 
       "Royalty Stream Optimization",
       "AI Dataset Curation & Licensing",
-      "Global Publishing Rights Management",
-      "Ethical AI Use Frameworks",
-      "Merchandising & Retail Coordination"
+      "Global Publishing Rights Management"
     ]
   },
   "rights-intelligence-reports": {
@@ -242,35 +221,19 @@ const SERVICES_DATA: Record<string, any> = {
     icon: BarChart3,
     description: "Detailed analysis of ownership status, licensing potential, and commercial viability of intellectual assets.",
     longDescription: `
-      Rights Intelligence at Marwane Holdings provides the data-driven foundation for all strategic decision-making. In an increasingly complex IP landscape, clarity is the ultimate asset. We deliver institutional-grade reporting that provides investors, heirs, and institutions with a clear view of portfolio health and future potential.
-
-      Our intelligence reports combine forensic legal research with sophisticated market analytics. We map global rights landscapes, evaluate historical performance trends, and perform rigorous risk assessments. This division transforms raw data into actionable dossiers, enabling our clients to navigate acquisitions, litigations, and long-term legacy planning with absolute confidence.
+      Rights Intelligence at Mervaine Holdings provides the data-driven foundation for all strategic decision-making. 
     `,
     pillars: [
-      { 
-        title: "Valuation Analysis", 
-        description: "Rigorous financial assessment of rights portfolios and historical catalogs.", 
-        icon: Coins 
-      },
-      { 
-        title: "Market Sentiment", 
-        description: "Analyzing the cultural and commercial relevance of assets across demographics.", 
-        icon: BarChart3 
-      },
-      { 
-        title: "Risk Assessment", 
-        description: "Identifying legal and commercial threats to asset continuity and ownership.", 
-        icon: ShieldCheck 
-      }
+      { title: "Valuation Analysis", description: "Rigorous financial assessment of rights portfolios.", icon: Coins },
+      { title: "Market Sentiment", description: "Analyzing the cultural and commercial relevance of assets.", icon: BarChart3 },
+      { title: "Risk Assessment", description: "Identifying legal and commercial threats to asset continuity.", icon: ShieldCheck }
     ],
     capabilities: [
       "Due Diligence & M&A Support Dossiers", 
       "Catalog Performance Benchmarking", 
       "Global Rights Mapping & Visualization", 
       "Trend Analysis & Forecast Intelligence",
-      "Chain-of-Title Health Audits",
-      "Competitive IP Landscape Analysis",
-      "Institutional Asset Inventory Reports"
+      "Chain-of-Title Health Audits"
     ]
   }
 };
@@ -312,7 +275,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <div className="col-span-12 lg:col-span-4 lg:col-start-9 mt-12 lg:mt-0">
               <div className="p-8 border-2 border-foreground bg-foreground text-background shadow-2xl animate-staccato delay-2">
                 <div className="flex items-center justify-between mb-8 border-b border-background/20 pb-4">
-                  <span className="text-[10px] font-mono opacity-50">DOCUMENT: MAR-{slug.toUpperCase()}</span>
+                  <span className="text-[10px] font-mono opacity-50">DOCUMENT: MER-{slug.toUpperCase()}</span>
                   <div className="w-3 h-3 bg-secondary" />
                 </div>
                 <h3 className="font-headline text-2xl mb-4 uppercase">Institutional Access</h3>
@@ -370,7 +333,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <div className="max-w-4xl mx-auto text-center mb-16">
             <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-primary mb-4 block">Operational Scope</span>
             <h2 className="font-headline text-4xl tracking-tighter mb-4">Functional Capabilities Matrix</h2>
-            <p className="text-foreground/50">Comprehensive services delivered through our proprietary Marwane Intelligence engine.</p>
+            <p className="text-foreground/50">Comprehensive services delivered through our proprietary Mervaine Intelligence engine.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
