@@ -1,0 +1,29 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "High-authority library and archival shelving",
+      "imageUrl": "https://picsum.photos/seed/mervaine-hero/1200/800",
+      "imageHint": "library archive"
+    },
+    {
+      "id": "rights-division",
+      "description": "Abstract legal documents and vintage seals",
+      "imageUrl": "https://picsum.photos/seed/rights/600/400",
+      "imageHint": "legal document"
+    },
+    {
+      "id": "archives-division",
+      "description": "Physical microfilm and archival boxes",
+      "imageUrl": "https://picsum.photos/seed/archives/600/400",
+      "imageHint": "archive box"
+    },
+    {
+      "id": "intel-division",
+      "description": "Modern digital interface with retro data visualizations",
+      "imageUrl": "https://picsum.photos/seed/intel/600/400",
+      "imageHint": "data visualization"
+    }
+  ]
+}
