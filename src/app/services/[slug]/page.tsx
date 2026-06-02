@@ -1,7 +1,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, FileText, Landmark } from "lucide-react";
+import { ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, TrendingUp, Coins, SearchCheck, FileSearch, Landmark, BarChart3, Cpu, UserCheck, Search } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { notFound } from "next/navigation";
@@ -43,6 +43,43 @@ const SERVICES_DATA: Record<string, any> = {
       "Heir and Beneficiary Coordination",
       "IP Portfolio Valuation"
     ]
+  },
+  "royalty-recovery": {
+    title: "Royalty Recovery",
+    category: "Financial",
+    icon: Globe,
+    description: "Identification and recovery of unpaid or misallocated royalties across global collection systems and digital platforms.",
+    longDescription: `
+      The global royalty landscape is increasingly fragmented, often resulting in significant capital remaining unclaimed or misdirected. Marwane's Royalty Recovery division utilizes proprietary forensic tools and an extensive network of international relationships to audit and reclaim these lost assets.
+      
+      We specialize in identifying "black box" revenue, correcting metadata discrepancies, and resolving multi-jurisdictional payment conflicts. Our goal is to ensure that the economic fruits of creative and intellectual labor are fully realized by their rightful owners.
+    `,
+    pillars: [
+      {
+        title: "Forensic Auditing",
+        description: "Deep-dive analysis into historical royalty flows and identifying structural misallocations.",
+        icon: SearchCheck
+      },
+      {
+        title: "Global Reclamation",
+        description: "Navigating international collection societies and digital DSPs to secure unclaimed funds.",
+        icon: Coins
+      },
+      {
+        title: "Arrears Settlement",
+        description: "Aggressive pursuit and negotiation of past-due payments for established rights holders.",
+        icon: TrendingUp
+      }
+    ],
+    capabilities: [
+      "Historical Performance Audits",
+      "Global Mechanical & Performance Tracking",
+      "Direct-to-Source Reclamation",
+      "Metadata Correction & Conflict Resolution",
+      "Black Box Fund Identification",
+      "International Tax Treaty Compliance",
+      "Multi-Platform Data Reconciliation"
+    ]
   }
 };
 
@@ -52,7 +89,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   if (!service) {
     // Return a basic placeholder for other services not yet fully fleshed out
-    if (["royalty-recovery", "copyright-research", "estate-representation", "archive-digitization", "licensing-monetization", "rights-intelligence-reports"].includes(slug)) {
+    const validSlugs = ["copyright-research", "estate-representation", "archive-digitization", "licensing-monetization", "rights-intelligence-reports"];
+    if (validSlugs.includes(slug)) {
       return (
         <main className="min-h-screen bg-background">
           <Navbar />
