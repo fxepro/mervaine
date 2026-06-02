@@ -1,7 +1,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { Divisions } from "@/components/sections/Divisions";
+import { Services } from "@/components/sections/Services";
 import { AssetClassifier } from "@/components/sections/AssetClassifier";
 import { Industries } from "@/components/sections/Industries";
 import { CaseStudies } from "@/components/sections/CaseStudies";
@@ -13,7 +13,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Divisions />
+      <Services />
       <AssetClassifier />
       <Industries />
       <CaseStudies />

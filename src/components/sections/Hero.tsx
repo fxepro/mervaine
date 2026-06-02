@@ -22,7 +22,7 @@ export function Hero() {
               <span className="text-primary italic">Generations</span> to Come.
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl leading-relaxed animate-staccato delay-2">
-              Mervaine Holdings manages the intersection of historical significance and future utility. 
+              Marwane Holdings manages the intersection of historical significance and future utility. 
               We provide institutional-grade preservation, rights management, and data intelligence 
               for estates, collections, and intellectual assets.
             </p>
@@ -31,11 +31,11 @@ export function Hero() {
           {/* Action Area */}
           <div className="col-span-12 lg:col-span-4 flex flex-col justify-end lg:items-end mb-12 animate-staccato delay-3">
             <div className="w-full lg:max-w-xs space-y-4">
-              <Button className="w-full h-14 bg-foreground text-background hover:bg-foreground/90 uppercase tracking-[0.2em] font-bold text-xs">
-                Explore Divisions <ArrowRight className="ml-2 w-4 h-4" />
+              <Button className="w-full h-14 bg-foreground text-background hover:bg-foreground/90 uppercase tracking-[0.2em] font-bold text-xs" asChild>
+                <a href="#services">Explore Services <ArrowRight className="ml-2 w-4 h-4" /></a>
               </Button>
-              <Button variant="outline" className="w-full h-14 border-foreground/20 uppercase tracking-[0.2em] font-bold text-xs">
-                Institutional Inquiry
+              <Button variant="outline" className="w-full h-14 border-foreground/20 uppercase tracking-[0.2em] font-bold text-xs" asChild>
+                <a href="#inquiry">Institutional Inquiry</a>
               </Button>
             </div>
           </div>
@@ -55,7 +55,7 @@ export function Hero() {
             <div className="absolute bottom-12 left-12 right-12 flex justify-between items-end text-background">
               <div className="max-w-md">
                 <span className="block text-xs uppercase tracking-widest opacity-80 mb-2">Internal Index: MH-1944-PR</span>
-                <p className="font-headline text-2xl leading-tight">Mervaine Archives central repository for historical record keeping.</p>
+                <p className="font-headline text-2xl leading-tight">Marwane Archives central repository for historical record keeping.</p>
               </div>
               <div className="hidden md:block">
                 <div className="w-16 h-16 border border-background/40 flex items-center justify-center rounded-full">

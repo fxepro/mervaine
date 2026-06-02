@@ -41,7 +41,7 @@ export function AssetClassifier() {
             </h2>
             <p className="text-foreground/70 leading-relaxed mb-8">
               Describe your asset—whether it be a family estate, a music catalog, or a historical archive. 
-              Our AI classification system will determine the optimal Mervaine division and suggest immediate service paths.
+              Our AI classification system will determine the optimal Marwane service path and provide immediate strategic routing.
             </p>
             <div className="p-8 border-2 border-foreground/5 bg-background shadow-inner">
               <span className="text-xs uppercase font-bold tracking-widest block mb-4">Asset Description Registry</span>
@@ -67,11 +67,11 @@ export function AssetClassifier() {
                 <Card className="border-2 border-primary overflow-hidden shadow-2xl">
                   <div className="bg-primary p-6 text-primary-foreground flex justify-between items-center">
                     <span className="text-xs uppercase font-bold tracking-widest">Classification Report</span>
-                    <span className="text-[10px] font-mono opacity-60">ID: {Math.random().toString(36).substr(2, 9).toUpperCase()}</span>
+                    <span className="text-[10px] font-mono opacity-60">REF: MAR-{Math.random().toString(36).substr(2, 6).toUpperCase()}</span>
                   </div>
                   <CardContent className="p-10 space-y-8">
                     <div>
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/40 mb-2 block">Identified Division</span>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/40 mb-2 block">Primary Service Stream</span>
                       <div className="flex items-center gap-3">
                         <CheckCircle2 className="w-6 h-6 text-primary" />
                         <h3 className="font-headline text-3xl uppercase">{result.division}</h3>

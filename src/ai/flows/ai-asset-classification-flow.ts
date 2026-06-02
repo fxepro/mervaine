@@ -1,6 +1,7 @@
+
 'use server';
 /**
- * @fileOverview An AI agent for classifying user assets and suggesting the appropriate Mervaine division and service path.
+ * @fileOverview An AI agent for classifying user assets and suggesting the appropriate Marwane service path.
  *
  * - aiAssetClassification - A function that handles the asset classification process.
  * - AiAssetClassificationInput - The input type for the aiAssetClassification function.
@@ -18,9 +19,9 @@ export type AiAssetClassificationInput = z.infer<typeof AiAssetClassificationInp
 
 // Define the output schema
 const AiAssetClassificationOutputSchema = z.object({
-  division: z.enum(['Mervaine Rights', 'Mervaine Archives', 'Mervaine Intelligence']).describe('The most relevant Mervaine division for the described asset.'),
-  servicePath: z.string().describe('A suggested service path or next step within the identified division, tailored to the asset description.'),
-  reasoning: z.string().describe('A brief explanation of why this division and service path were chosen.'),
+  division: z.string().describe('The primary Marwane service stream relevant to the asset.'),
+  servicePath: z.string().describe('A suggested service path or next step within Marwane services, tailored to the asset description.'),
+  reasoning: z.string().describe('A brief explanation of why this service path was chosen.'),
 });
 export type AiAssetClassificationOutput = z.infer<typeof AiAssetClassificationOutputSchema>;
 
@@ -32,18 +33,22 @@ const prompt = ai.definePrompt({
   name: 'assetClassificationPrompt',
   input: { schema: AiAssetClassificationInputSchema },
   output: { schema: AiAssetClassificationOutputSchema },
-  prompt: `You are an expert asset classifier for Mervaine Holdings, a company dedicated to preservation and stewardship. Your task is to analyze a user's asset description and determine the most relevant Mervaine division and an appropriate service path.
+  prompt: `You are an expert asset classifier for Marwane Holdings, a company dedicated to preservation and stewardship. Your task is to analyze a user's asset description and determine the most relevant Marwane service and an appropriate service path.
 
-Here are the Mervaine divisions and their primary focuses:
-- **Mervaine Rights**: Specializes in intellectual property, copyrights, trademarks, licensing opportunities, ownership verification, and royalty recovery. This division is for assets where the primary concern is ownership, usage rights, or commercialization.
-- **Mervaine Archives**: Focuses on the preservation, digitization, and cataloging of physical or digital historical artifacts, documents, collections, and media. This division is for assets that require long-term care, digital accessibility, or historical documentation.
-- **Mervaine Intelligence**: Provides access to a rights intelligence database for tracking ownership, status, and licensing opportunities. This division is for users seeking data-driven insights about existing rights or market analysis, rather than directly submitting an asset for management.
+Here are the core Marwane services:
+1. Rights Administration: Management of intellectual property portfolios, licensing, royalty collection.
+2. Royalty Recovery: Identification and recovery of unpaid or misallocated royalties globally.
+3. Copyright Research: Deep legal and archival investigation into ownership and chain-of-title.
+4. Estate Representation: Support for heirs, families, and institutions managing creative legacies.
+5. Archive Digitization: Conversion of physical and analog collections into structured digital systems.
+6. Licensing & Monetization: Commercial licensing strategy across media, publishing, and AI training.
+7. Rights Intelligence Reports: Analysis of ownership status and licensing potential.
 
-Analyze the following asset description and provide your classification as a JSON object, ensuring all fields are populated according to the output schema.
+Analyze the following asset description and provide your classification as a JSON object.
 
 Asset Description: {{{assetDescription}}}
 
-When choosing the 'servicePath', be specific and action-oriented.
+When choosing the 'division', select one of the 7 services listed above. When choosing 'servicePath', be specific and action-oriented.
 `,
 });
 

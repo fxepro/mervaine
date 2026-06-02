@@ -7,7 +7,7 @@ export function Footer() {
           <div className="flex items-center gap-3">
              <div className="w-12 h-12 bg-primary flex items-center justify-center text-primary-foreground font-headline text-3xl font-bold">M</div>
              <div className="text-left">
-               <span className="font-headline text-2xl tracking-tighter block leading-none">MERVAINE</span>
+               <span className="font-headline text-2xl tracking-tighter block leading-none">MARWANE</span>
                <span className="text-[10px] uppercase tracking-[0.5em] font-bold opacity-50">Holdings</span>
              </div>
           </div>
@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono opacity-40">
-          <span>&copy; {new Date().getFullYear()} MERVAINE HOLDINGS GROUP. ALL RIGHTS RESERVED.</span>
+          <span>&copy; {new Date().getFullYear()} MARWANE HOLDINGS GROUP. ALL RIGHTS RESERVED.</span>
           <div className="flex gap-4">
             <span>INDEX: SEC-14-192</span>
             <span>LOC: EST-009</span>

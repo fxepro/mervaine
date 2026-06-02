@@ -15,15 +15,15 @@ export function Navbar() {
               M
             </div>
             <span className="font-headline text-2xl tracking-tight hidden md:block">
-              MERVAINE <span className="font-light">HOLDINGS</span>
+              MARWANE <span className="font-light">HOLDINGS</span>
             </span>
           </Link>
           
           <div className="hidden lg:flex items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/70">
-            <Link href="#divisions" className="hover:text-primary transition-colors">Divisions</Link>
             <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
             <Link href="#industries" className="hover:text-primary transition-colors">Industries</Link>
             <Link href="#governance" className="hover:text-primary transition-colors">Governance</Link>
+            <Link href="#classifier" className="hover:text-primary transition-colors">Intelligence</Link>
             <Link href="#inquiry" className="hover:text-primary transition-colors">Contact</Link>
           </div>
         </div>
