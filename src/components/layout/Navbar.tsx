@@ -32,8 +32,8 @@ export function Navbar() {
           <Button variant="ghost" size="icon" className="hidden md:inline-flex opacity-50">
             <Search className="w-5 h-5" />
           </Button>
-          <Button variant="outline" className="border-foreground/20 uppercase tracking-widest text-[10px] h-10 px-6 font-bold hidden md:inline-flex">
-            Institutional Access
+          <Button variant="outline" className="border-foreground/20 uppercase tracking-widest text-[10px] h-10 px-6 font-bold hidden md:inline-flex" asChild>
+            <Link href="/request-dossier">Institutional Access</Link>
           </Button>
           <Button variant="ghost" size="icon" className="lg:hidden">
             <Menu className="w-6 h-6" />

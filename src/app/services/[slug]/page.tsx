@@ -319,8 +319,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 <p className="text-sm opacity-70 mb-8 leading-relaxed">
                   Request a specialized briefing or initiate a portfolio review with our stewardship directors.
                 </p>
-                <Button className="w-full h-12 bg-background text-foreground hover:bg-background/90 rounded-none uppercase tracking-widest text-[10px] font-bold">
-                  Request Institutional Briefing
+                <Button className="w-full h-12 bg-background text-foreground hover:bg-background/90 rounded-none uppercase tracking-widest text-[10px] font-bold" asChild>
+                  <Link href={`/request-dossier?service=${slug}`}>Request Institutional Briefing</Link>
                 </Button>
               </div>
             </div>
