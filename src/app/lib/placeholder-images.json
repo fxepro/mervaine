@@ -8,28 +8,46 @@
       "imageHint": "library archive"
     },
     {
-      "id": "rights-division",
+      "id": "rights-admin",
       "description": "Abstract legal documents and vintage seals",
-      "imageUrl": "https://picsum.photos/seed/rights/600/400",
+      "imageUrl": "https://picsum.photos/seed/rights-admin/800/600",
       "imageHint": "legal document"
     },
     {
-      "id": "archives-division",
-      "description": "Physical microfilm and archival boxes",
-      "imageUrl": "https://picsum.photos/seed/archives/600/400",
-      "imageHint": "archive box"
+      "id": "royalty-recovery",
+      "description": "Close up of financial ledgers and vintage coins",
+      "imageUrl": "https://picsum.photos/seed/royalty/800/600",
+      "imageHint": "financial ledger"
     },
     {
-      "id": "intel-division",
-      "description": "Modern digital interface with retro data visualizations",
-      "imageUrl": "https://picsum.photos/seed/intel/600/400",
-      "imageHint": "data visualization"
+      "id": "copyright-research",
+      "description": "Microfilm reader and archival research tools",
+      "imageUrl": "https://picsum.photos/seed/research/800/600",
+      "imageHint": "archival research"
     },
     {
-      "id": "industry-estates",
-      "description": "Stately manor and classic architecture",
-      "imageUrl": "https://picsum.photos/seed/estates/800/600",
+      "id": "estate-rep",
+      "description": "Stately manor and classic architectural details",
+      "imageUrl": "https://picsum.photos/seed/estate/800/600",
       "imageHint": "estate architecture"
+    },
+    {
+      "id": "archive-digitization",
+      "description": "Professional scanner and physical microfilm",
+      "imageUrl": "https://picsum.photos/seed/digitization/800/600",
+      "imageHint": "scanner archive"
+    },
+    {
+      "id": "licensing-monetization",
+      "description": "Modern digital interface with media rights metadata",
+      "imageUrl": "https://picsum.photos/seed/monetization/800/600",
+      "imageHint": "digital rights"
+    },
+    {
+      "id": "rights-intelligence",
+      "description": "Data visualization on high-quality parchment style digital screen",
+      "imageUrl": "https://picsum.photos/seed/intelligence/800/600",
+      "imageHint": "data visualization"
     },
     {
       "id": "industry-music",
