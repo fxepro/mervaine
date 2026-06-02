@@ -1,7 +1,11 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, TrendingUp, Coins, SearchCheck, FileSearch, Landmark, BarChart3, Cpu, UserCheck, Search } from "lucide-react";
+import { 
+  ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, 
+  TrendingUp, Coins, SearchCheck, FileSearch, Landmark, BarChart3, 
+  Cpu, UserCheck, Search, Scale, Database, FileText
+} from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { notFound } from "next/navigation";
@@ -47,23 +51,23 @@ const SERVICES_DATA: Record<string, any> = {
   "royalty-recovery": {
     title: "Royalty Recovery",
     category: "Financial",
-    icon: Globe,
+    icon: Coins,
     description: "Identification and recovery of unpaid or misallocated royalties across global collection systems and digital platforms.",
     longDescription: `
-      The global royalty landscape is increasingly fragmented, often resulting in significant capital remaining unclaimed or misdirected. Marwane's Royalty Recovery division utilizes proprietary forensic tools and an extensive network of international relationships to audit and reclaim these lost assets.
+      In the modern digital economy, the flow of royalties is often obscured by systemic fragmentation and metadata degradation. Marwane's Royalty Recovery division operates as a forensic financial entity, dedicated to identifying and reclaiming capital that has been lost to 'black box' funds or misallocated due to historical tracking errors.
       
-      We specialize in identifying "black box" revenue, correcting metadata discrepancies, and resolving multi-jurisdictional payment conflicts. Our goal is to ensure that the economic fruits of creative and intellectual labor are fully realized by their rightful owners.
+      We leverage proprietary data intelligence to audit international collection societies, streaming platforms, and broadcast entities. Our mission is to bridge the gap between creative output and economic reward, ensuring that rights holders receive every cent they are legally owed.
     `,
     pillars: [
       {
         title: "Forensic Auditing",
-        description: "Deep-dive analysis into historical royalty flows and identifying structural misallocations.",
-        icon: SearchCheck
+        description: "Deep-dive analysis into historical royalty flows to identify structural misallocations.",
+        icon: FileSearch
       },
       {
         title: "Global Reclamation",
         description: "Navigating international collection societies and digital DSPs to secure unclaimed funds.",
-        icon: Coins
+        icon: Globe
       },
       {
         title: "Arrears Settlement",
@@ -73,13 +77,102 @@ const SERVICES_DATA: Record<string, any> = {
     ],
     capabilities: [
       "Historical Performance Audits",
-      "Global Mechanical & Performance Tracking",
-      "Direct-to-Source Reclamation",
-      "Metadata Correction & Conflict Resolution",
       "Black Box Fund Identification",
-      "International Tax Treaty Compliance",
-      "Multi-Platform Data Reconciliation"
+      "Suspense Account Resolution",
+      "Global DSP Metadata Scrubbing",
+      "International Society Conflict Management",
+      "Mechanical & Performance Royalty Tracking",
+      "Forensic Accounting Dossiers"
     ]
+  },
+  "copyright-research": {
+    title: "Copyright Research",
+    category: "Forensics",
+    icon: Search,
+    description: "Deep legal and archival investigation into ownership, chain-of-title, and rights validity for high-value assets.",
+    longDescription: `
+      Copyright Research at Marwane Holdings is an exercise in meticulous truth-seeking. We provide institutional heirs and investors with absolute clarity regarding the legal standing of their assets. 
+      
+      Our researchers navigate global copyright registries, physical archives, and historical contracts to construct a definitive chain-of-title. This process is essential for validating ownership prior to acquisition, litigation, or large-scale commercialization.
+    `,
+    pillars: [
+      {
+        title: "Chain-of-Title Analysis",
+        description: "Verifying every transfer of ownership from the moment of creation to the present day.",
+        icon: Landmark
+      },
+      {
+        title: "Legal Clearance",
+        description: "Determining the exact legal status and expiration dates of copyright protection globally.",
+        icon: Scale
+      },
+      {
+        title: "Archival Forensics",
+        description: "Retrieving lost documentation and physical evidence to support ownership claims.",
+        icon: History
+      }
+    ],
+    capabilities: [
+      "Global Copyright Registry Searches",
+      "Assignment and Transfer Verification",
+      "Termination Rights Analysis",
+      "Work-for-Hire Status Review",
+      "International Reciprocity Assessment",
+      "Litigation Support Documentation",
+      "Ownership Conflict Resolution"
+    ]
+  },
+  "estate-representation": {
+    title: "Estate Representation",
+    category: "Advisory",
+    icon: UserCheck,
+    description: "Support for heirs, families, and institutions managing creative legacies and complex successions.",
+    longDescription: "Strategic stewardship for multi-generational estates, providing a unified voice for creative legacies across global markets.",
+    pillars: [
+      { title: "Legacy Stewardship", description: "Long-term planning for the preservation of creative influence.", icon: Landmark },
+      { title: "Heir Coordination", description: "Facilitating governance between multiple beneficiaries and stakeholders.", icon: UserCheck },
+      { title: "Succession Planning", description: "Structural legal frameworks for the transition of rights portfolios.", icon: ShieldCheck }
+    ],
+    capabilities: ["Beneficiary Governance", "Family Office Integration", "Institutional Trustee Support", "Philanthropic Legacy Strategy"]
+  },
+  "archive-digitization": {
+    title: "Archive Digitization",
+    category: "Preservation",
+    icon: History,
+    description: "Conversion of physical and analog collections into structured, museum-grade digital systems.",
+    longDescription: "State-of-the-art archival preservation using high-resolution digitization and AI-enhanced metadata tagging for historical records.",
+    pillars: [
+      { title: "Forensic Imaging", description: "Ultra-high-resolution capture of fragile historical artifacts.", icon: FileSearch },
+      { title: "Metadata Structuring", description: "Organizing archives into searchable, institutional-grade databases.", icon: Database },
+      { title: "Digital Curation", description: "Long-term storage and accessibility strategies for digital assets.", icon: ShieldCheck }
+    ],
+    capabilities: ["Glass Plate Negative Recovery", "Manuscript Digitization", "Multi-Spectral Imaging", "Archival Storage Solutions"]
+  },
+  "licensing-monetization": {
+    title: "Licensing & Monetization",
+    category: "Growth",
+    icon: Cpu,
+    description: "Commercial licensing strategy across media, publishing, AI training, and archival use cases.",
+    longDescription: "Unlocking the economic potential of historical and creative assets through innovative licensing frameworks and strategic partnerships.",
+    pillars: [
+      { title: "Commercial Strategy", description: "Identifying high-value licensing opportunities in emerging markets.", icon: TrendingUp },
+      { title: "AI Training Licensing", description: "Structured data licensing for modern generative AI development.", icon: Cpu },
+      { title: "Brand Partnerships", description: "Aligning historical assets with contemporary institutional brands.", icon: Globe }
+    ],
+    capabilities: ["Sync Licensing", "Brand Heritage Marketing", "Derivative Work Strategy", "Royalty Stream Optimization"]
+  },
+  "rights-intelligence-reports": {
+    title: "Rights Intelligence Reports",
+    category: "Intelligence",
+    icon: BarChart3,
+    description: "Detailed analysis of ownership status, licensing potential, and commercial viability of intellectual assets.",
+    longDescription: "High-level strategic intelligence for investors and estate managers, providing deep visibility into portfolio health and valuation.",
+    pillars: [
+      { title: "Valuation Analysis", description: "Rigorous financial assessment of rights portfolios and catalogs.", icon: Coins },
+      { title: "Market Sentiment", description: "Analyzing the cultural and commercial relevance of assets.", icon: BarChart3 },
+      { title: "Risk Assessment", description: "Identifying legal and commercial threats to asset continuity.", icon: ShieldCheck }
+    ],
+    capabilities: ["Due Diligence Dossiers", "Catalog Performance Reports", "Global Rights Mapping", "Trend Analysis Intelligence"]
   }
 };
 
@@ -88,25 +181,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const service = SERVICES_DATA[slug];
 
   if (!service) {
-    // Return a basic placeholder for other services not yet fully fleshed out
-    const validSlugs = ["copyright-research", "estate-representation", "archive-digitization", "licensing-monetization", "rights-intelligence-reports"];
-    if (validSlugs.includes(slug)) {
-      return (
-        <main className="min-h-screen bg-background">
-          <Navbar />
-          <div className="container mx-auto px-6 py-24">
-            <Link href="/#services" className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary mb-12">
-              <ArrowLeft className="w-4 h-4" /> Back to Services
-            </Link>
-            <div className="max-w-4xl">
-              <h1 className="font-headline text-6xl tracking-tighter mb-8 uppercase">{slug.replace(/-/g, ' ')}</h1>
-              <p className="text-xl text-foreground/60 leading-relaxed italic">The dossier for this service is currently being archived. Please check back shortly for full institutional details.</p>
-            </div>
-          </div>
-          <Footer />
-        </main>
-      );
-    }
     return notFound();
   }
 
@@ -116,7 +190,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     <main className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
       <section className="pt-16 pb-24 border-b border-foreground/5">
         <div className="container mx-auto px-6">
           <Link href="/#services" className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/40 hover:text-primary transition-colors mb-12">
@@ -156,7 +229,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      {/* Narrative Section */}
       <section className="py-24 bg-[#F8F4ED]">
         <div className="container mx-auto px-6">
           <div className="journal-grid">
@@ -167,9 +239,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   "The preservation of rights is the preservation of legacy."
                 </p>
                 <div className="space-y-6 text-foreground/70 leading-relaxed text-lg">
-                  {service.longDescription.split('\n\n').map((paragraph: string, i: number) => (
-                    <p key={i}>{paragraph.trim()}</p>
-                  ))}
+                  <p>{service.longDescription}</p>
                 </div>
               </div>
             </div>
@@ -196,7 +266,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      {/* Capabilities Checklist */}
       <section className="py-24 border-y border-foreground/5">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">

@@ -1,5 +1,5 @@
 
-import { Gavel, History, Search, UserCheck, Cpu, BarChart3, Globe, ArrowRight } from "lucide-react";
+import { Gavel, History, Search, UserCheck, Cpu, BarChart3, Globe, ArrowRight, Coins } from "lucide-react";
 import Link from "next/link";
 
 const SERVICES = [
@@ -13,7 +13,7 @@ const SERVICES = [
   {
     title: "Royalty Recovery",
     slug: "royalty-recovery",
-    icon: Globe,
+    icon: Coins,
     description: "Identification and recovery of unpaid or misallocated royalties across global collection systems.",
     category: "Financial"
   },
@@ -102,13 +102,15 @@ export function Services() {
             </div>
           ))}
           
-          {/* CTA Tile */}
           <div className="bg-secondary p-10 flex flex-col justify-center text-foreground group">
             <h3 className="font-headline text-3xl mb-4 leading-tight">Tailored <br />Stewardship.</h3>
             <p className="text-sm font-medium mb-8 opacity-80">Custom frameworks for institutional archives and large-scale estates.</p>
-            <button className="w-full py-4 border-2 border-foreground font-bold uppercase tracking-widest text-xs hover:bg-foreground hover:text-secondary transition-colors">
+            <Link 
+              href="#inquiry"
+              className="w-full py-4 border-2 border-foreground font-bold uppercase tracking-widest text-xs hover:bg-foreground hover:text-secondary transition-colors text-center"
+            >
               Request Dossier
-            </button>
+            </Link>
           </div>
         </div>
       </div>
