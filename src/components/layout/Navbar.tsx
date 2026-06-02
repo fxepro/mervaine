@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { Search, Menu, Library } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -19,19 +19,20 @@ export function Navbar() {
             </span>
           </Link>
           
-          <div className="hidden lg:flex items-center gap-6 text-sm font-medium uppercase tracking-widest text-foreground/70">
+          <div className="hidden lg:flex items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/70">
             <Link href="#divisions" className="hover:text-primary transition-colors">Divisions</Link>
-            <Link href="#intelligence" className="hover:text-primary transition-colors">Intelligence</Link>
+            <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
+            <Link href="#industries" className="hover:text-primary transition-colors">Industries</Link>
             <Link href="#governance" className="hover:text-primary transition-colors">Governance</Link>
             <Link href="#inquiry" className="hover:text-primary transition-colors">Contact</Link>
           </div>
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="hidden md:inline-flex">
+          <Button variant="ghost" size="icon" className="hidden md:inline-flex opacity-50">
             <Search className="w-5 h-5" />
           </Button>
-          <Button variant="outline" className="border-foreground/20 uppercase tracking-widest text-xs h-10 px-6 font-bold hidden md:inline-flex">
+          <Button variant="outline" className="border-foreground/20 uppercase tracking-widest text-[10px] h-10 px-6 font-bold hidden md:inline-flex">
             Institutional Access
           </Button>
           <Button variant="ghost" size="icon" className="lg:hidden">

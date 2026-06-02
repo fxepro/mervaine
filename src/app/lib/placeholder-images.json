@@ -24,6 +24,18 @@
       "description": "Modern digital interface with retro data visualizations",
       "imageUrl": "https://picsum.photos/seed/intel/600/400",
       "imageHint": "data visualization"
+    },
+    {
+      "id": "industry-estates",
+      "description": "Stately manor and classic architecture",
+      "imageUrl": "https://picsum.photos/seed/estates/800/600",
+      "imageHint": "estate architecture"
+    },
+    {
+      "id": "industry-music",
+      "description": "Vintage recording equipment and vinyl",
+      "imageUrl": "https://picsum.photos/seed/music/800/600",
+      "imageHint": "vintage music"
     }
   ]
 }

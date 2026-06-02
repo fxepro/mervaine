@@ -30,6 +30,7 @@ const DIVISIONS = [
 export function Divisions() {
   return (
     <section id="divisions" className="py-24 bg-foreground text-background">
+      <div id="services" className="absolute -mt-24" /> {/* Services anchor point */}
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="max-w-2xl">
@@ -78,11 +79,8 @@ export function Divisions() {
                     <div className="p-2 border border-background/20">
                       <div className="p-2 bg-secondary/10">
                         <div className="text-secondary">
-                          <div className="w-6 h-6">
-                            <div className="border-2 border-current w-full h-full flex items-center justify-center">
-                               {/* Thick stroke icon placeholder style */}
-                               <div className="w-3 h-3 bg-current" />
-                            </div>
+                          <div className="w-6 h-6 border-2 border-current flex items-center justify-center">
+                            <div className="w-2 h-2 bg-current" />
                           </div>
                         </div>
                       </div>
