@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { 
   ArrowLeft, Gavel, ShieldCheck, Globe, History, CheckCircle2, 
   TrendingUp, Coins, SearchCheck, Landmark, BarChart3, 
-  Cpu, UserCheck, Search, Scale, Database, FileText, Scan
+  Cpu, UserCheck, Search, Scale, Database, FileText, Scan, Zap
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -203,26 +203,75 @@ const SERVICES_DATA: Record<string, any> = {
     category: "Growth",
     icon: Cpu,
     description: "Commercial licensing strategy across media, publishing, AI training, and archival use cases.",
-    longDescription: "Unlocking the economic potential of historical and creative assets through innovative licensing frameworks and strategic partnerships.",
+    longDescription: `
+      Licensing & Monetization at Marwane Holdings is the strategic engine that converts archival value into sustainable economic growth. We recognize that intellectual property is most powerful when it is actively engaged with the contemporary world.
+
+      Our framework for monetization is built on the principles of brand integrity and strategic alignment. We move beyond passive administration to actively cultivate partnerships in sync licensing, luxury branding, and high-growth technology sectors—including the licensing of structured data for advanced generative AI models. We ensure that every commercial engagement respects the legacy of the asset while maximizing its financial performance across international markets.
+    `,
     pillars: [
-      { title: "Commercial Strategy", description: "Identifying high-value licensing opportunities in emerging markets.", icon: TrendingUp },
-      { title: "AI Training Licensing", description: "Structured data licensing for modern generative AI development.", icon: Cpu },
-      { title: "Brand Partnerships", description: "Aligning historical assets with contemporary institutional brands.", icon: Globe }
+      { 
+        title: "Commercial Strategy", 
+        description: "Identifying high-value licensing opportunities in emerging and established markets.", 
+        icon: TrendingUp 
+      },
+      { 
+        title: "AI Training Licensing", 
+        description: "Structured data licensing and compliance for modern generative AI development.", 
+        icon: Cpu 
+      },
+      { 
+        title: "Brand Partnerships", 
+        description: "Aligning historical and creative assets with contemporary institutional brands.", 
+        icon: Globe 
+      }
     ],
-    capabilities: ["Sync Licensing", "Brand Heritage Marketing", "Derivative Work Strategy", "Royalty Stream Optimization"]
+    capabilities: [
+      "Synchronization Licensing for Media", 
+      "Brand Heritage Marketing Strategies", 
+      "Derivative Work & Adaptation Strategy", 
+      "Royalty Stream Optimization",
+      "AI Dataset Curation & Licensing",
+      "Global Publishing Rights Management",
+      "Ethical AI Use Frameworks",
+      "Merchandising & Retail Coordination"
+    ]
   },
   "rights-intelligence-reports": {
     title: "Rights Intelligence Reports",
     category: "Intelligence",
     icon: BarChart3,
     description: "Detailed analysis of ownership status, licensing potential, and commercial viability of intellectual assets.",
-    longDescription: "High-level strategic intelligence for investors and estate managers, providing deep visibility into portfolio health and valuation.",
+    longDescription: `
+      Rights Intelligence at Marwane Holdings provides the data-driven foundation for all strategic decision-making. In an increasingly complex IP landscape, clarity is the ultimate asset. We deliver institutional-grade reporting that provides investors, heirs, and institutions with a clear view of portfolio health and future potential.
+
+      Our intelligence reports combine forensic legal research with sophisticated market analytics. We map global rights landscapes, evaluate historical performance trends, and perform rigorous risk assessments. This division transforms raw data into actionable dossiers, enabling our clients to navigate acquisitions, litigations, and long-term legacy planning with absolute confidence.
+    `,
     pillars: [
-      { title: "Valuation Analysis", description: "Rigorous financial assessment of rights portfolios and catalogs.", icon: Coins },
-      { title: "Market Sentiment", description: "Analyzing the cultural and commercial relevance of assets.", icon: BarChart3 },
-      { title: "Risk Assessment", description: "Identifying legal and commercial threats to asset continuity.", icon: ShieldCheck }
+      { 
+        title: "Valuation Analysis", 
+        description: "Rigorous financial assessment of rights portfolios and historical catalogs.", 
+        icon: Coins 
+      },
+      { 
+        title: "Market Sentiment", 
+        description: "Analyzing the cultural and commercial relevance of assets across demographics.", 
+        icon: BarChart3 
+      },
+      { 
+        title: "Risk Assessment", 
+        description: "Identifying legal and commercial threats to asset continuity and ownership.", 
+        icon: ShieldCheck 
+      }
     ],
-    capabilities: ["Due Diligence Dossiers", "Catalog Performance Reports", "Global Rights Mapping", "Trend Analysis Intelligence"]
+    capabilities: [
+      "Due Diligence & M&A Support Dossiers", 
+      "Catalog Performance Benchmarking", 
+      "Global Rights Mapping & Visualization", 
+      "Trend Analysis & Forecast Intelligence",
+      "Chain-of-Title Health Audits",
+      "Competitive IP Landscape Analysis",
+      "Institutional Asset Inventory Reports"
+    ]
   }
 };
 
@@ -237,7 +286,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const Icon = service.icon;
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background text-foreground">
       <Navbar />
       
       <section className="pt-16 pb-24 border-b border-foreground/5">
